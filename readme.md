@@ -75,4 +75,14 @@ To decrypt your victim's files (he need to run this script on his computer too):
   python3 ransomware_decrypt.py
 ```
   
+## Discord Webhooks
+
+![App Screenshot](https://i.ibb.co/cQ7z9Y8/Screenshot-2022-05-24-at-8-09-39-PM.png)
+
+- In this code there is a system that allows you to receive via webhook the hostname on which computer the ransomware was executed as well as the decryption key. 
+
+- [!] For the moment the key cannot be used but you can change that by putting an input in the script and converting the string to bytes, base64 url-safe
+
+![App Screenshot](https://i.ibb.co/Trn4QzH/Screenshot-2022-05-24-at-8-17-20-PM.png)
+
 
