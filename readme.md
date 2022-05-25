@@ -53,7 +53,7 @@ If you want to convert the .py file into a `.exe` file its possible ! Using [pyi
 ## Installation Windows
 ![Logo](https://i.ibb.co/tJBNv9x/Screenshot-2022-05-24-at-8-07-34-PM.png)
 
-In order to be able to install all the dependencies you will need to have `pip` installed and run the commands below. If you are on **windows** run one of the following commands :
+In order to be able to install all the dependencies you will need to have `pip` installed and run the commands below. If you are on **Windows/Linux/Mac** run one of the following commands :
 
 ```bash
   pip3 install -r requirements.txt or pip install -r requirements.txt
