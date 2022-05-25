@@ -41,6 +41,10 @@ In order to be able to encrypt the files and decrypt them, I use the `cryptograp
 
 If you want to convert the .py file into a `.exe` file its possible ! Using [pyinstaller](https://pyinstaller.org/en/stable/)
 
+### Reminder...
+
+![EDUCATIONPURPOSESONLY](https://i.ibb.co/23Gs7pn/WIFMAWF.png)
+
 ## Authors
 
 - [@zaqoQLF](https://www.github.com/zaqoQLF)
