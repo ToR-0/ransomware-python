@@ -94,6 +94,14 @@ for more information click [here](https://www.geeksforgeeks.org/python-os-listdi
   path = "/"   # "/" correspond to the root file but you can custom with a custom path example C: Boot or D:/
   for file in os.listdir(path): # then specify the path as parameter
 ```
+
+If the decryption key correspond it will shows you this:
+
+[Decryption Accepted](https://i.ibb.co/3zn2NK3/rightkey.png)
+
+Else, it will return an error and keep your files encrypted until you have the right decryption key :
+
+[Decryption Rejected](https://i.ibb.co/D5MngLn/incorrect-Key.png)
   
 
 
