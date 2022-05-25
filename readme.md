@@ -180,6 +180,8 @@ Hello World File afer encryption :
 - [FIXED - WORKS] For the moment the key cannot be used but you can change that by putting an input in the script and converting the string to bytes, base64 url-safe
 
 ![App Screenshot](https://i.ibb.co/KFSn0dQ/webhook2.png)
+
+## Screenshot of Terminal
 ![App Screenshot](https://i.ibb.co/RDNbssh/ransomware.png)
 
 
