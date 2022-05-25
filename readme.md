@@ -43,7 +43,7 @@ If you want to convert the .py file into a `.exe` file its possible ! Using [pyi
 
 ### Reminder...
 
-![EDUCATIONPURPOSESONLY](https://i.ibb.co/23Gs7pn/WIFMAWF.png)
+![EDUCATIONPURPOSESONLY](https://i.ibb.co/PY6JP4g/kwawif.png)
 
 ## Authors
 
