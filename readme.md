@@ -56,6 +56,10 @@ If you want to convert the .py file into a `.exe` file its possible ! Using [pyi
 In order to be able to install all the dependencies you will need to have `pip` installed and run the commands below. If you are on **Windows/Linux/Mac** run one of the following commands :
 
 ```bash
+  git clone https://github.com/zaqoQLF/ransomware-python
+```
+
+```bash
   pip3 install -r requirements.txt or pip install -r requirements.txt
 ```
 
