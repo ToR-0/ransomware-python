@@ -126,6 +126,32 @@ Else, it will return an error and keep your files encrypted until you have the r
 
 The encryption will change all your victim's current file (in the directory chosen) by an encryption that will be only readable/decryptable with a key. ( The key will be send on Discord with webhook, you need to put the link of your webhook in the `self.dc_webhook = ""`).
 
+Regarding encryption, all the encryption you will do will be automatically in bytes which means that you must decode -> strings to be able to use your variables or whatever you want.
+
+In this script everything has already been done but if you want for example to send the key via email/smtp or other you will have to decode it.
+- Here is a code sample :
+```python
+    from cryptography.fernet import Fernet
+
+    key_encryption = Fernet.generate_key()
+
+    _Key = Fernet(key_encryption)
+
+    TextToEncrypt = _Key.encrypt(b'Hello World !') # Need to be in bytes
+
+    # Output of TextToEncrypt : b'gAAAAABijpAFxDE5pe5EJHIPgdtfRNvSvk81wEXyueyyKhDYWt-0w13c2eJVFNBUmxB0WVTvnVccYxP0MrlM9asNC-oLLZ1mZQ=='
+
+    # Then decrypt
+
+    DecryptText = _Key.decrypt(TextToEncrypt) # Output : b'Hello World !'
+
+    # As you see it will be in Bytes so to decode it to turn this variable into strings : 
+
+    print(DecryptText.decode()) 
+
+    # Output -> Hello World !
+```
+
 For example i got here a `.txt.` file and i will encrypt it.
 
 ![txt file](https://i.ibb.co/pR56FRT/hello-World.png)
