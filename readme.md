@@ -102,6 +102,21 @@ If the decryption key correspond it will shows you this:
 Else, it will return an error and keep your files encrypted until you have the right decryption key :
 
 ![Decryption Rejected](https://i.ibb.co/D5MngLn/incorrect-Key.png)
+
+## How Encryption works ?
+
+The encryption will change all your victim's current file (in the directory chosen) by an encryption that will be only readable/decryptable with a key. ( The key will be send on Discord with webhook, you need to put the link of your webhook in the `self.dc_webhook = ""`).
+
+For example i got here a `.txt.` file and i will encrypt it.
+
+![txt file](https://i.ibb.co/pR56FRT/hello-World.png)
+
+So, first of all in my directory i only got this txt file and my script, you can make some exception to avoid encryption on some specified files.
+If i run my script it will encrypt it and it will be not readable anymore until the victim's got the key
+
+![GIF](https://i.ibb.co/RCV2HMF/ezgif-1-a906ee1eb7.gif)
+
+
   
 
 
