@@ -97,11 +97,11 @@ for more information click [here](https://www.geeksforgeeks.org/python-os-listdi
 
 If the decryption key correspond it will shows you this:
 
-[Decryption Accepted](https://i.ibb.co/3zn2NK3/rightkey.png)
+![Decryption Accepted](https://i.ibb.co/1s4RSrg/rightkey.png)
 
 Else, it will return an error and keep your files encrypted until you have the right decryption key :
 
-[Decryption Rejected](https://i.ibb.co/D5MngLn/incorrect-Key.png)
+![Decryption Rejected](https://i.ibb.co/D5MngLn/incorrect-Key.png)
   
 
 
