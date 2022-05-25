@@ -98,7 +98,7 @@ To decrypt the victim files he will need the encryption key, you will receive it
 
 - [!] For the moment the key cannot be used but you can change that by putting an input in the script and converting the string to bytes, base64 url-safe
 
-![App Screenshot](https://i.ibb.co/Trn4QzH/Screenshot-2022-05-24-at-8-17-20-PM.png)
+![App Screenshot](https://i.ibb.co/KFSn0dQ/webhook2.png)
 ![App Screenshot](https://i.ibb.co/RDNbssh/ransomware.png)
 
 
