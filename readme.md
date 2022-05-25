@@ -114,11 +114,11 @@ For example i got here a `.txt.` file and i will encrypt it.
 So, first of all in my directory i only got this txt file and my script, you can make some exception to avoid encryption on some specified files.
 If i run my script it will encrypt it and it will be not readable anymore until the victim's got the key
 
-After that, few files will be created, first an `encryptionCheck.txt` will be create on the victim's computer to check if this file exist. If its not it will encrypt all the file and if it already exist it will just ask the victim a ransom.
+After that, few files will be created, first an `encryptionCheck.txt` will be create on the victim's computer this file will be used to check if this file exist. If its not it will encrypt all the file and if it already exist it will just ask the victim a ransom. So its a way to check if the encryption already been executed or not.
 
 This `encryptionCheck.txt` is very useful but not the smarter way to do it but it makes the script more easier to understand and like this all the code is in one and unique script. 
 
-After the encryption check file it will create a `.key` file on the computer's victim. This will store the key in it but the victim will in no way know that the key is on his computer, moreover it will be mixed with a lot of files so not found for the victim. Moreover, since the files will have been modified, "The quick access" (folder on your computer) will be spammed by all the modified files, so it is impossible to find this key. 
+After the encryption check file done, it will create a `rkey.key` file on the computer's victim. This will store the key in it but the victim will in no way know that the key is on his computer, moreover it will be mixed with a lot of files so impossible to find it for the victim. Since the files will have been modified, "The quick access" (folder on your computer) will be spammed by all the modified files, so it is impossible to find this key. 
 
 Hello World File afer encryption : 
 
