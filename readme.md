@@ -120,6 +120,8 @@ The script must run on your victim computer, or if you want to try you can ! but
 ```python
   python3 ransomware.py
 ```
+**[ ! ] Run it a first time will encrypt all files, running a second time will detect that the encryption already been applied so it will requests the key to decrypt all victim's file**
+
 
 By default the files which will be encrypted will be those which are in the current working directories, to specify the path you can add this for example:
 for more information click [here](https://www.geeksforgeeks.org/python-os-listdir-method/)
