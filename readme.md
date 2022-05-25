@@ -39,6 +39,7 @@ Here is an open-source program that allows you to understand the creation of a r
 
 In order to be able to encrypt the files and decrypt them, I use the `cryptography.fernet` module. This module allows to encrypt a message or files only accessible with a decryption key.
 
+If you want to convert the .py file into a `.exe` file its possible ! Using [pyinstaller](https://pyinstaller.org/en/stable/)
 
 ## Authors
 
@@ -56,9 +57,11 @@ In order to be able to install all the dependencies you will need to have `pip` 
   pip install socket
   pip install cryptography
   pip install discord_webhook
+  pip install colorama
+  pip install binascii
 ```
 
-In the `ransomware_encrypt.py` can modify some values like the `Discord Webhook`, your CryptoCurrency Wallet, the requested price, and the currency desired.
+In the `ransomware.py` can modify some values like the `Discord Webhook`, your CryptoCurrency Wallet, the requested price, and the currency desired.
 
 ```python
   class ransomware:
@@ -81,13 +84,11 @@ To be able to execute the files you will have to run these commands
 
 To encrypt your victim files:
 ```python
-  python3 ransomware_encrypt.py 
+  python3 ransomware.py
 ```
 
-To decrypt your victim's files (he need to run this script on his computer too):
-```python
-  python3 ransomware_decrypt.py
-```
+To decrypt the victim files he will need the encryption key, you will receive it by webhook through discord webhook.
+
   
 ## Discord Webhooks
 
@@ -98,5 +99,6 @@ To decrypt your victim's files (he need to run this script on his computer too):
 - [!] For the moment the key cannot be used but you can change that by putting an input in the script and converting the string to bytes, base64 url-safe
 
 ![App Screenshot](https://i.ibb.co/Trn4QzH/Screenshot-2022-05-24-at-8-17-20-PM.png)
+![App Screenshot](https://i.ibb.co/RDNbssh/ransomware.png)
 
 
