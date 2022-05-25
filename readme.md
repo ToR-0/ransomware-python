@@ -56,6 +56,12 @@ If you want to convert the .py file into a `.exe` file its possible ! Using [pyi
 In order to be able to install all the dependencies you will need to have `pip` installed and run the commands below. If you are on **windows** run the `install.bat` file and the installation will be done automatically
 
 ```bash
+  pip3 install -r requirements.txt or pip install -r requirements.txt
+```
+
+Or install all dependencies one by one : 
+
+```bash
   pip install os
   pip install time
   pip install socket
