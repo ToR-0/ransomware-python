@@ -185,7 +185,7 @@ Hello World File afer encryption :
 
 ![App Screenshot](https://i.ibb.co/KFSn0dQ/webhook2.png)
 
-## Screenshot of Terminal
+## Screenshot of Shell
 ![App Screenshot](https://i.ibb.co/RDNbssh/ransomware.png)
 
 
