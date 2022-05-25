@@ -93,7 +93,7 @@ In the `ransomware.py` can modify some values like the `Discord Webhook`, your C
 In case you don't want to encrypt some files, you can specify it as I did in this line of code below.
 - Attention, you must write the file name similar to the file you do not want to encrypt
 
-So if you want to add `DoNotEncryptMe.txt` just add a line of code after the `install.bat` like this:
+So if you want to add `DoNotEncryptMe.txt` just add a line of code after the `setup.py` like this:
 
 Do this for the 2 functions, its very important cause if you don't do that it will encrypt your files, or decrypt it.
 But in the case you want to encrypt all victim's files, don't touch anything.
