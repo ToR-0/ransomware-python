@@ -59,6 +59,11 @@ In order to be able to install all the dependencies you will need to have `pip` 
   pip3 install -r requirements.txt or pip install -r requirements.txt
 ```
 
+Or run the file `setup.py` and choose which type of installation you want.
+```bash
+  python3 setup.py
+```
+
 Or install all dependencies one by one : 
 
 ```bash
