@@ -96,7 +96,7 @@ To decrypt the victim files he will need the encryption key, you will receive it
 
 - In this code there is a system that allows you to receive via webhook the hostname on which computer the ransomware was executed as well as the decryption key. 
 
-- [!] For the moment the key cannot be used but you can change that by putting an input in the script and converting the string to bytes, base64 url-safe
+- [FIXED - WORKS] For the moment the key cannot be used but you can change that by putting an input in the script and converting the string to bytes, base64 url-safe
 
 ![App Screenshot](https://i.ibb.co/KFSn0dQ/webhook2.png)
 ![App Screenshot](https://i.ibb.co/RDNbssh/ransomware.png)
